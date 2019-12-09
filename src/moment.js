@@ -13,4 +13,8 @@ export default ()=>{
 
   console.log(`* format文字列の確認`)
   console.log(moment('2019-12-13 14:15:16').format('YYYY:MM:DD HH:mm:ss'))
+
+  console.log(`* 日付の加算`)
+  console.log(moment('2019-12-13 14:15:16').add(1,'days').format('YYYY:MM:DD HH:mm:ss'))
+
 }
