@@ -7,5 +7,12 @@ export default () => {
   console.timeLog(label)
   for (var i = 0; i < 9999; ++i) { }
   console.timeEnd(label)
-  
+
+  console.log(`* 関数の引数の書き換えは可能`)
+  const foo = (val = 0) => {
+    val = 5
+    return val
+  }
+  console.log(foo())
+
 }
