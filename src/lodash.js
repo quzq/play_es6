@@ -12,5 +12,16 @@ export default ()=>{
   console.log(`* undifined をtrimした結果`)
   console.log(!!_.trim(undefined))
 
+  console.log(`* 配列のソート`)
+  let sortUsers = [
+    { 'user': 'fred', 'age': 48 },
+    { 'user': 'barney', 'age': 36 },
+    { 'user': 'fred', 'age': 40 },
+    { 'user': 'barney', 'age': 34 }
+  ];
+  console.log(_.orderBy(sortUsers, 'user', 'desc'))
+  console.log(_.orderBy(sortUsers, i => parseInt(i.age), 'desc') )
+
+  console.log(`* `)
   console.log(`* `)
 }
