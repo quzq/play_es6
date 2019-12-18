@@ -1,3 +1,4 @@
 export default () => {
-  console.log('hello!')
+  console.log('--- tmp.js -----------------------------')
+  console.log('* ')
 }
