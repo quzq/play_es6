@@ -22,6 +22,11 @@ export default ()=>{
   console.log(_.orderBy(sortUsers, 'user', 'desc'))
   console.log(_.orderBy(sortUsers, i => parseInt(i.age), 'desc') )
 
-  console.log(`* `)
+  console.log(`* group by`)
+  let array = [{ cd: '01', value: 100 }, { cd: '01', value: 200 }, { cd: '02', value: 400 }]
+
+  console.log(_.groupBy(array, i=> i.cd))
+
+
   console.log(`* `)
 }
