@@ -27,6 +27,8 @@ export default ()=>{
 
   console.log(_.groupBy(array, i=> i.cd))
 
+  console.log(`* reject: 偶数を除外したリスト`)
+  console.log(_.reject([1, 2, 3, 4, 5, 6], function(num) { return num % 2 == 0; }))
 
   console.log(`* `)
 }

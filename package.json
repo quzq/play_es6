@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node src/index.js",
     "build": "babel src --out-dir dist",
+    "lint": "eslint src",
     "serve": "node dist/index.js"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "@babel/core": "^7.7.4",
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "eslint": "^6.8.0",
     "nodemon": "^2.0.1"
   },
   "dependencies": {
