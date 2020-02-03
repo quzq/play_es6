@@ -17,4 +17,6 @@ export default ()=>{
   console.log(`* 日付の加算`)
   console.log(moment('2019-12-13 14:15:16').add(1,'days').format('YYYY:MM:DD HH:mm:ss'))
 
+  console.log(`* nullからの作成 -> moment.invalid(/* NaN */)`)
+  console.log(moment(null))
 }
