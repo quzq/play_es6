@@ -27,6 +27,10 @@ export default ()=>{
 
   console.log(_.groupBy(array, i=> i.cd))
 
+  console.log(`* group by してsum`)
+  const _grouped = _.groupBy(array, i=> i.cd)
+  console.log(Object.keys(_grouped).map(key => ({code: key, value: _.sumBy(_grouped[key], 'value')})))
+
   console.log(`* reject: 偶数を除外したリスト`)
   console.log(_.reject([1, 2, 3, 4, 5, 6], function(num) { return num % 2 == 0; }))
 

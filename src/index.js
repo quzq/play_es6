@@ -6,8 +6,8 @@ import regex from "./regex"
 import util from "./util"
 import _this from "./this"
 
-//lodashSrc();
-momentSrc();
+lodashSrc();
+// momentSrc();
 //momentTzSrc();
 //regex();
 //util()
