@@ -34,5 +34,31 @@ export default ()=>{
   console.log(`* reject: 偶数を除外したリスト`)
   console.log(_.reject([1, 2, 3, 4, 5, 6], function(num) { return num % 2 == 0; }))
 
+  console.log(`* difference オブジェクト`)
+  console.log(_.difference([{name:'aaa'},{name:'bbb'}],[{name:'aaa'}, {name:'ccc'}]))
+  console.log(_.differenceWith([{name:'aaa'},{name:'bbb'}],[{name:'aaa'}, {name:'ccc'}], _.isEqual))
+  console.log(_.differenceWith([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [{ name: 'aaa', year: 18 }, { name: 'ccc' }], _.isEqual))
+  console.log(_.differenceWith([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [{ name: 'aaa', year: 19 }, { name: 'ccc' }], _.isEqual))
+  console.log(_.differenceWith([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [{ name: 'aaa', year: undefined }, { name: 'ccc' }], _.isEqual))
+
+  console.log(`* isEqual`)
+  console.log(_.isEqual([{ name: 'aaa', year: 18 }], [{ name: 'aaa', year: 18 }]))
+  console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [  { name: 'aaa', year: 18 }, { name: 'bbb' },]))
+  console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [  { name: 'aaa', year: undefined }, { name: 'bbb' },]))
+  console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [ { name: 'bbb' }, { name: 'aaa', year: undefined }]))
+  console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [ { name: 'bbb' }, { name: 'aaa', year: 18}]))
+
+
+
+
+  console.log(`* zip`)
+  {
+    const foo = [1,2,3,4,5]
+    const bar = [2,4,6,8,10]
+    console.log(_.zip(foo,bar))
+  }
+
+
+
   console.log(`* `)
 }
