@@ -6,10 +6,10 @@ import regex from "./regex"
 import util from "./util"
 import _this from "./this"
 
-lodashSrc();
+//lodashSrc();
 // momentSrc();
 //momentTzSrc();
-//regex();
+regex();
 //util()
 //_this()
 src();
