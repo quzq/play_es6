@@ -19,4 +19,11 @@ export default ()=>{
 
   console.log(`* nullからの作成 -> moment.invalid(/* NaN */)`)
   console.log(moment(null))
+
+  console.log(`* 月は0-11`)
+  {
+    const date = moment('2019-01-01 14:15:16')
+    console.log(date.get('month'))
+  }
+
 }

@@ -14,11 +14,17 @@ export default ()=>{
   console.log(fixed.toDate())
   const fixed2 = moment.tz('2019-12-10 16:30:00', 'Europe/Stockholm')
   console.log(fixed2.toDate())
-
   
   console.log(`* unix時間にミリ秒はない`)
   console.log(moment.tz('2019-12-10 16:30:00.134', 'Asia/Tokyo').toDate())
   console.log(moment.tz('2019-12-10 16:30:01.134', 'Asia/Tokyo').unix())
   console.log(moment.tz('2019-12-10 16:30:01.000', 'Asia/Tokyo').unix())
 
+  console.log(`* utcよりjst当月の取得`)
+  {
+    const utc = moment(now).utc() 
+    console.log(utc)
+    console.log(`hour:${utc.get('hour')}`)
+    console.log(`hour:${utc.tz('Asia/Tokyo').get('hour')}`)
+  }
 }
