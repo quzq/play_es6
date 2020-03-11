@@ -1,4 +1,4 @@
-import src from "./2020/02/21"
+import src from "./2020/03/11"
 import lodashSrc from "./lodash" 
 import momentSrc from "./moment" 
 import momentTzSrc from "./momenttz" 
@@ -6,8 +6,8 @@ import regex from "./regex"
 import util from "./util"
 import _this from "./this"
 
-// lodashSrc();
- momentSrc();
+ lodashSrc();
+// momentSrc();
 // momentTzSrc();
 // regex();
 // util()

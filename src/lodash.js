@@ -48,9 +48,6 @@ export default ()=>{
   console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [ { name: 'bbb' }, { name: 'aaa', year: undefined }]))
   console.log(_.isEqual([{ name: 'aaa', year: 18 }, { name: 'bbb' }], [ { name: 'bbb' }, { name: 'aaa', year: 18}]))
 
-
-
-
   console.log(`* zip`)
   {
     const foo = [1,2,3,4,5]
@@ -58,7 +55,13 @@ export default ()=>{
     console.log(_.zip(foo,bar))
   }
 
-
+  console.log(`* trim`)
+  console.log(_.trim(' aaa '))  // aaa
+  console.log(_.trim(' a aa '))  // a aa
+  console.log(_.trim(''))  // '' 
+  console.log(_.trim(null))  // '' 
+  console.log(_.trim(undefined))  // '' 
+  console.log(_.trim(0))  // '' 
 
   console.log(`* `)
 }
