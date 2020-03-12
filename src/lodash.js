@@ -63,5 +63,12 @@ export default ()=>{
   console.log(_.trim(undefined))  // '' 
   console.log(_.trim(0))  // '' 
 
+  console.log(`* uniq`)
+  {
+    const foo = [{id: 12},{id: 13},{id: 12},]
+    console.log(_.chain(foo).uniqBy('id').value())
+    console.log(_.uniqBy(foo,'id'))
+  }
+
   console.log(`* `)
 }
