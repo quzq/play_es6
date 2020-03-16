@@ -69,6 +69,13 @@ export default ()=>{
     console.log(_.chain(foo).uniqBy('id').value())
     console.log(_.uniqBy(foo,'id'))
   }
+  
+  console.log(`* indexOf`)
+  {
+    const foo = ['100', '200', '500']
+    console.log(_.indexOf(foo,'500'))
+    console.log(_.indexOf(foo,'300'))
+  }
 
   console.log(`* `)
 }
