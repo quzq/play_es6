@@ -77,5 +77,12 @@ export default ()=>{
     console.log(_.indexOf(foo,'300'))
   }
 
+  console.log(`* concat`)
+  {
+    const foo = ['100', {value:'200'}, '500']
+    console.log(_.concat(foo,[1,2]))
+    console.log(_.concat(foo,null))
+  }
+
   console.log(`* `)
 }
