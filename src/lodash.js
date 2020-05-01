@@ -84,5 +84,10 @@ export default ()=>{
     console.log(_.concat(foo,null))
   }
 
+  console.log(`* find`)
+  {
+    console.log(_.find([{id:1, },{id:2},{id:3}], i=>i.id===3))
+  }
+
   console.log(`* `)
 }
