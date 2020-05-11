@@ -89,5 +89,16 @@ export default ()=>{
     console.log(_.find([{id:1, },{id:2},{id:3}], i=>i.id===3))
   }
 
+  console.log(`* reduce`)
+  {
+    const dat = [1,2,3,4,5,6,]
+    const res = _.reduce(dat, (prev, c)=>{
+      const maxLen = 5
+      const chunked = _.chunk(prev, maxLen -1 )
+      return chunked.length<2 ? _.concat(prev,c) : _.concat(chunked[0], parseInt(chunked[1])+c)
+    },[])
+    console.log(res)
+  }
+
   console.log(`* `)
 }
