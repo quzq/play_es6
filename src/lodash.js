@@ -100,5 +100,13 @@ export default ()=>{
     console.log(res)
   }
 
+  console.log(`* max`)
+  {
+    console.log(_.max([5, 3, 5, 6]))
+    console.log(_.maxBy([5, 3, 5, 6]))
+    console.log(_.maxBy([{ x: 10 }, { x: 5 }, { x: 8 }]))
+    console.log(_.maxBy([{ y: 10 }, { x: 5 }, { x: 8 }],'x'))
+  }
+
   console.log(`* `)
 }

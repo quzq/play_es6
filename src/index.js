@@ -5,11 +5,15 @@ import momentTzSrc from "./momenttz"
 import regex from "./regex"
 import util from "./util"
 import _this from "./this"
+import * as favorites from "./favorites"
 
- lodashSrc();
+// lodashSrc();
 // momentSrc();
 // momentTzSrc();
 // regex();
 // util()
 // _this()
-src();
+console.log(favorites.getAverageWithoutOutlier([100,100,20,30,40]))
+
+//src();
+
