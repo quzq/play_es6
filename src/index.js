@@ -1,4 +1,4 @@
-import src from "./2020/03/12"
+import src from "./2020/07/30"
 import lodashSrc from "./lodash" 
 import momentSrc from "./moment" 
 import momentTzSrc from "./momenttz" 
@@ -13,7 +13,6 @@ import * as favorites from "./favorites"
 // regex();
 // util()
 // _this()
-console.log(favorites.getAverageWithoutOutlier([100,100,20,30,40]))
 
-//src();
+src();
 

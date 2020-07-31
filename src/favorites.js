@@ -25,3 +25,17 @@ export const getAverageWithoutOutlier = values => {
   const forAverage =  dists.filter(v => v.idx !== outlier.idx).map(v => v.value)
   return forAverage.reduce((prev,curr)=>prev+curr, 0)/forAverage.length
 }
+
+// 回帰直線を求める（最小二乗法）
+export const lsm = coordinates => {
+  const n = coordinates.length
+  const sigX = coordinates.reduce((acc, c) => acc + c.x, 0)
+  const sigY = coordinates.reduce((acc, c) => acc + c.y, 0)
+  const sigXX = coordinates.reduce((acc, c) => acc + c.x * c.x, 0)
+  const sigXY = coordinates.reduce((acc, c) => acc + c.x * c.y, 0)
+  // a(傾き)を求める
+  const a = (n * sigXY - sigX * sigY) / (n * sigXX - Math.pow(sigX, 2));
+  // b(切片)を求める
+  const b = (sigXX * sigY - sigXY * sigX) / (n * sigXX - Math.pow(sigX, 2));
+  return { a, b }
+}
