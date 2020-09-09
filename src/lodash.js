@@ -108,5 +108,11 @@ export default ()=>{
     console.log(_.maxBy([{ y: 10 }, { x: 5 }, { x: 8 }],'x'))
   }
 
+  console.log(`* merge`)
+  {
+    console.log(_.merge({a:1,b:2},{c:3}))
+    console.log(_.merge({a:1,b:2},null))
+  }
+
   console.log(`* `)
 }

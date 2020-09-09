@@ -7,12 +7,12 @@ import util from "./util"
 import _this from "./this"
 import * as favorites from "./favorites"
 
-// lodashSrc();
+lodashSrc();
 // momentSrc();
 // momentTzSrc();
 // regex();
 // util()
 // _this()
 
-src();
+//src();
 
