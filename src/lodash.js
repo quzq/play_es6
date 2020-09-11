@@ -110,7 +110,7 @@ export default ()=>{
 
   console.log(`* merge`)
   {
-    console.log(_.merge({a:1,b:2},{c:3}))
+    console.log(_.merge({a:1,b:2},{c:3},{d:5}))
     console.log(_.merge({a:1,b:2},null))
   }
 
