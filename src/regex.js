@@ -48,4 +48,7 @@ export default () => {
   console.log(target)
   console.log((target.match(/(\d+)\s*([^ -~｡-ﾟ]+)\s*((?:[\-\(\)\s\.､･%ｦ-ﾟ0-9A-Z]|,)+)\s*([^ -~｡-ﾟ]+)/)))
 
+  target = "/aaa/bbb" 
+  console.log(target)
+  console.log((target.match(/\/*(\w+)\/*/))[1])
 }
