@@ -26,4 +26,6 @@ export default ()=>{
     console.log(date.get('month'))
   }
 
+  console.log(`* 文字列のパース`)
+  console.log(moment('20200925','YYYYMMDD'))
 }
