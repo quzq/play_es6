@@ -9,12 +9,13 @@ import _this from "./this"
 import * as favorites from "./favorites"
 
 // lodashSrc();
- momentSrc();
-dayjsSrc();
+// momentSrc();
+// dayjsSrc();
  // momentTzSrc();
 // regex();
 // util()
 // _this()
 
 //src();
-
+const today = new Date()
+console.log(today,favorites.getStartDateInThisWeek(2,today))

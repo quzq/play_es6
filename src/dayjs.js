@@ -27,5 +27,12 @@ export default ()=>{
   }
 
   console.log(`* 文字列のパース`)
-  console.log(dayjs('20200925','YYYYMMDD'))
+  {
+    const date =dayjs('20200925000000', 'YYYYMMDDhhmmss') 
+    console.log(date.format('YYYY/MM/DD hh:mm:ss'))
+    console.log(date.toDate().getDay())
+    console.log(dayjs('20200925', 'YYYYMMDD').format('YYYY/MM/DD') )
+    console.log(date.toDate().getDay())
+  }
+  
 }

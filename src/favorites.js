@@ -1,4 +1,6 @@
 import * as _ from "lodash"
+import dayjs from 'dayjs'
+
 const stretchSize = (parentWidth, parentHeight, childWidth, childHeight) => {
     if (!parentWidth || !parentHeight || !childWidth || !childHeight) return { width: 0, height: 0 }
 
@@ -38,4 +40,10 @@ export const lsm = coordinates => {
   // b(切片)を求める
   const b = (sigXX * sigY - sigXY * sigX) / (n * sigXX - Math.pow(sigX, 2));
   return { a, b }
+}
+export const getStartDateInThisWeek = (weekStartDay, today)=>{
+  const thisWeekDay = today.getDay()
+  // console.log(weekStartDay,thisWeekDay)
+  return dayjs(today).add(-((thisWeekDay + 7 - weekStartDay) % 7), 'day').toDate()
+
 }
