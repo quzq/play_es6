@@ -68,6 +68,9 @@ export default ()=>{
     const foo = [{id: 12},{id: 13},{id: 12},]
     console.log(_.chain(foo).uniqBy('id').value())
     console.log(_.uniqBy(foo,'id'))
+    const bar = [{id: 12, a:1},{id: 12, a:1},{id: 13,a:1},{id: 12,a:2},]
+    console.log(_.uniq(bar))
+    console.log(_.uniqWith(bar,_.isEqual))
   }
   
   console.log(`* indexOf`)

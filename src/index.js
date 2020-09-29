@@ -8,7 +8,7 @@ import util from "./util"
 import _this from "./this"
 import * as favorites from "./favorites"
 
-// lodashSrc();
+ lodashSrc();
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
@@ -17,5 +17,5 @@ import * as favorites from "./favorites"
 // _this()
 
 //src();
-const today = new Date()
-console.log(today,favorites.getStartDateInThisWeek(2,today))
+//const today = new Date()
+//console.log(today,favorites.getStartDateInThisWeek(2,today))
