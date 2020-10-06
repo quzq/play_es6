@@ -6,9 +6,10 @@ import momentTzSrc from "./momenttz"
 import regex from "./regex"
 import util from "./util"
 import _this from "./this"
+import axios from "./axios"
 import * as favorites from "./favorites"
 
- lodashSrc();
+// lodashSrc();
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
@@ -19,3 +20,5 @@ import * as favorites from "./favorites"
 //src();
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
+
+axios()

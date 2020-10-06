@@ -22,6 +22,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "dayjs": "^1.8.36",
     "lodash": "^4.17.15",
     "moment": "^2.27.0",
