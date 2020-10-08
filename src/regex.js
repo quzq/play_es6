@@ -51,4 +51,7 @@ export default () => {
   target = "/aaa/bbb" 
   console.log(target)
   console.log((target.match(/\/*(\w+)\/*/))[1])
+  
+  target = ["/aaa_a/s","/aaa_a/","/aaa_a","/aaa_a/444/aa", "/aaaa"] 
+  console.log(target, (target.map(i=>i.match(/^\/\aaa_a(\/(\w|\/)*)?$/g))))
 }

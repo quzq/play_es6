@@ -13,7 +13,7 @@ import * as favorites from "./favorites"
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
-// regex();
+regex();
 // util()
 // _this()
 
@@ -21,4 +21,4 @@ import * as favorites from "./favorites"
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
 
-axios()
+//axios()
