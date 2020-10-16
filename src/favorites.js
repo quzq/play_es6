@@ -47,3 +47,20 @@ export const getStartDateInThisWeek = (weekStartDay, today)=>{
   return dayjs(today).add(-((thisWeekDay + 7 - weekStartDay) % 7), 'day').toDate()
 
 }
+
+export const sortFloorNo =(floors)=>{
+  const sortAsc = (a, b) => a.order - b.order;
+  const sortDesc = (a, b) => b.order - a.order;
+  const floorNos = _.uniqWith(
+    floors.map((i) => ({ code: i.floorNo, order: parseInt(i.floorNo.replace('B', '-')) })),
+    _.isEqual
+  ).sort(sortDesc);
+  // 地上階は昇順で選択、地下階は降順で選択
+  console.log('sort', floorNos);
+  console.log('filter',floorNos.filter((i) => i.order > 0))
+  console.log('asc',floorNos.filter((i) => i.order > 0).sort(sortAsc))
+  console.log('first',_.first(floorNos.filter((i) => i.order > 0).sort(sortAsc)) || 'what?')
+
+  return (_.first(floorNos.filter((i) => i.order > 0).sort(sortAsc)) || _.first(floorNos.filter((i) => i.order < 0).sort(sortDesc))).code;  
+
+}
