@@ -64,3 +64,24 @@ export const sortFloorNo =(floors)=>{
   return (_.first(floorNos.filter((i) => i.order > 0).sort(sortAsc)) || _.first(floorNos.filter((i) => i.order < 0).sort(sortDesc))).code;  
 
 }
+
+export const convertPoints = (s)=>{
+  const splited = s.split(',')
+  const numbers = splited.map(i=>parseInt(i))
+  if(numbers.length % 2 >0) throw new Error('座標の組が不正です')
+  const points = [...Array(numbers.length/2).keys()].map(i=>`${numbers[i*2]},${numbers[i*2+1]} `)
+  return points.reduce((prev,curr)=>prev+curr,'')
+}
+
+
+export const customErrorOccer = () => {
+  class AppError extends Error{
+    constructor(code, message){
+      super(message)
+      this.name = 'AppError'
+      this.code = code
+    }
+  }
+  throw new AppError(404,"what?")
+  
+}

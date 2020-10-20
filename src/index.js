@@ -20,14 +20,16 @@ import * as favorites from "./favorites"
 //src();
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
-const arr = [
-  {floorNo:'B2'},
-  {floorNo:'B1'},
-  {floorNo:'1F'},
-  {floorNo:'2F'},
-  {floorNo:'3F'},
-  {floorNo:'4F'},
-]
-console.log(arr,favorites.sortFloorNo(arr))
+// const arr = [
+//   {floorNo:'B2'},
+//   {floorNo:'B1'},
+//   {floorNo:'1F'},
+//   {floorNo:'2F'},
+//   {floorNo:'3F'},
+//   {floorNo:'4F'},
+// ]
+// console.log(arr,favorites.sortFloorNo(arr))
 
 //axios()
+console.log(favorites.convertPoints(''))
+//console.log(favorites.customErrorOccer())
