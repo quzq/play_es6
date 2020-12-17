@@ -9,7 +9,7 @@ import _this from "./this"
 import axios from "./axios"
 import * as favorites from "./favorites"
 
-// lodashSrc();
+lodashSrc();
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
@@ -31,5 +31,5 @@ import * as favorites from "./favorites"
 // console.log(arr,favorites.sortFloorNo(arr))
 
 //axios()
-console.log(favorites.convertPoints(''))
+//console.log(favorites.convertPoints(''))
 //console.log(favorites.customErrorOccer())

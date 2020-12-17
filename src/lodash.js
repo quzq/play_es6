@@ -117,5 +117,7 @@ export default ()=>{
     console.log(_.merge({a:1,b:2},null))
   }
 
-  console.log(`* `)
+  console.log(`* trim`)
+  console.log('null', _.trim(null))
+  console.log('undifined', _.trim(undefined))
 }
