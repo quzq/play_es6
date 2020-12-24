@@ -32,6 +32,7 @@ export default ()=>{
     console.log(date.format('YYYY/MM/DD hh:mm:ss'))
     console.log(date.toDate().getDay())
     console.log(dayjs('20200925', 'YYYYMMDD').format('YYYY/MM/DD') )
+    console.log(dayjs('202005', 'YYYYMMDD').format('YYYY/MM/DD') )
     console.log(date.toDate().getDay())
   }
   

@@ -9,9 +9,9 @@ import _this from "./this"
 import axios from "./axios"
 import * as favorites from "./favorites"
 
-lodashSrc();
+//lodashSrc();
 // momentSrc();
-// dayjsSrc();
+ dayjsSrc();
  // momentTzSrc();
 //regex();
 // util()
