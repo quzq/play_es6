@@ -8,6 +8,7 @@ import util from "./util"
 import _this from "./this"
 import axios from "./axios"
 import * as favorites from "./favorites"
+import _throw from "./throw"
 
 //lodashSrc();
 // momentSrc();
@@ -16,8 +17,8 @@ import * as favorites from "./favorites"
 //regex();
 // util()
 // _this()
-
-src();
+_throw()
+//src();
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
 // const arr = [
