@@ -1,4 +1,4 @@
-import src from "./2020/09/17"
+import src from "./2020/12/25"
 import lodashSrc from "./lodash" 
 import momentSrc from "./moment" 
 import dayjsSrc from "./dayjs" 
@@ -11,13 +11,13 @@ import * as favorites from "./favorites"
 
 //lodashSrc();
 // momentSrc();
- dayjsSrc();
+// dayjsSrc();
  // momentTzSrc();
 //regex();
 // util()
 // _this()
 
-//src();
+src();
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
 // const arr = [
