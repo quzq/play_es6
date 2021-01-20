@@ -24,7 +24,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dayjs": "^1.8.36",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31"
   }
