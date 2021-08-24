@@ -10,7 +10,7 @@ import axios from "./axios"
 import * as favorites from "./favorites"
 import _throw from "./throw"
 
-//lodashSrc();
+lodashSrc();
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
@@ -18,7 +18,7 @@ import _throw from "./throw"
 // util()
 // _this()
 //_throw()
-src();
+//src();
 //const today = new Date()
 //console.log(today,favorites.getStartDateInThisWeek(2,today))
 // const arr = [

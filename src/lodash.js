@@ -120,4 +120,8 @@ export default ()=>{
   console.log(`* trim`)
   console.log('null', _.trim(null))
   console.log('undifined', _.trim(undefined))
+
+  console.log(`* last`)
+  console.log('null', _.last(null))
+  console.log('[]', _.last([]))
 }
