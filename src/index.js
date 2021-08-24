@@ -10,7 +10,7 @@ import axios from "./axios"
 import * as favorites from "./favorites"
 import _throw from "./throw"
 
-lodashSrc();
+//lodashSrc();
 // momentSrc();
 // dayjsSrc();
  // momentTzSrc();
@@ -31,6 +31,15 @@ lodashSrc();
 // ]
 // console.log(arr,favorites.sortFloorNo(arr))
 
+const arr = [
+  {corp_cd:'1', store_cd: '1'},
+  {corp_cd:'1', store_cd: '2'},
+  {corp_cd:'1', store_cd: null},
+  {corp_cd:'2', store_cd: null},
+  {corp_cd:'3', store_cd: '1'},
+  {corp_cd:'3', store_cd: '2'},
+]
+console.log(favorites.groupChildCode(arr))
 //axios()
 //console.log(favorites.convertPoints(''))
 //console.log(favorites.customErrorOccer())

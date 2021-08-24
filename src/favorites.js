@@ -85,3 +85,16 @@ export const customErrorOccer = () => {
   throw new AppError(404,"what?")
   
 }
+
+export const groupChildCode = (arr) => {
+  return arr.reduce((sum, curr) => {
+    const lastCorp = _.last(sum)
+    if (!lastCorp || lastCorp.corp_cd !== curr.corp_cd) {
+      return [...sum, { corp_cd: curr.corp_cd, store_cds: curr.store_cd && [curr.store_cd] }]
+    } else {
+      const fixedCorps = sum.length < 2 ? [] : sum.slice(0, sum.length - 1)
+      return [...fixedCorps, { ...lastCorp, store_cds: lastCorp.store_cds && [...lastCorp.store_cds, curr.store_cd] }]
+    }
+  }, [])
+}
+
