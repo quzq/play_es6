@@ -1,24 +1,28 @@
-import axios from 'axios'
+import axios from 'axios';
 
-export default ()=>{
-  console.log('--- axios.js -----------------------------')
+export default () => {
+  console.log('--- axios.js -----------------------------');
 
-  function getToken(){
-    return '' // トークンなし
+  function getToken() {
+    return ''; // トークンなし
   }
 
-  axios.interceptors.request.use(config => {
+  axios.interceptors.request.use((config) => {
     if (!getToken()) {
-      throw new axios.Cancel('トークンがないためリクエストはキャンセルされました');
+      throw new axios.Cancel(
+        'トークンがないためリクエストはキャンセルされました'
+      );
     } else {
-      config.headers.Authorization = "Bearer " + getToken();
+      config.headers.Authorization = 'Bearer ' + getToken();
       return config;
     }
   });
 
   async function getZip() {
     try {
-      const response = await axios.get('http://api.thni.net/jzip/X0401/JSON/064/0941.js');
+      const response = await axios.get(
+        'http://api.thni.net/jzip/X0401/JSON/064/0941.js'
+      );
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -26,5 +30,4 @@ export default ()=>{
   }
 
   getZip();
-
-}
+};

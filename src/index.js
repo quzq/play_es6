@@ -1,19 +1,20 @@
-import src from "./2021/05/19"
-import lodashSrc from "./lodash" 
-import momentSrc from "./moment" 
-import dayjsSrc from "./dayjs" 
-import momentTzSrc from "./momenttz" 
-import regex from "./regex"
-import util from "./util"
-import _this from "./this"
-import axios from "./axios"
-import * as favorites from "./favorites"
-import _throw from "./throw"
+import src from './2021/05/19';
+import lodashSrc from './lodash';
+import momentSrc from './moment';
+import dayjsSrc from './dayjs';
+import momentTzSrc from './momenttz';
+import regex from './regex';
+import util from './util';
+import _this from './this';
+import axios from './axios';
+import string from './string';
+import * as favorites from './favorites';
+import _throw from './throw';
 
 //lodashSrc();
 // momentSrc();
 // dayjsSrc();
- // momentTzSrc();
+// momentTzSrc();
 //regex();
 // util()
 // _this()
@@ -31,15 +32,17 @@ import _throw from "./throw"
 // ]
 // console.log(arr,favorites.sortFloorNo(arr))
 
-const arr = [
-  {corp_cd:'1', store_cd: '1'},
-  {corp_cd:'1', store_cd: '2'},
-  {corp_cd:'1', store_cd: null},
-  {corp_cd:'2', store_cd: null},
-  {corp_cd:'3', store_cd: '1'},
-  {corp_cd:'3', store_cd: '2'},
-]
-console.log(favorites.groupChildCode(arr))
+// const arr = [
+//   { corp_cd: '1', store_cd: '1' },
+//   { corp_cd: '1', store_cd: '2' },
+//   { corp_cd: '1', store_cd: null },
+//   { corp_cd: '2', store_cd: null },
+//   { corp_cd: '3', store_cd: '1' },
+//   { corp_cd: '3', store_cd: '2' },
+// ];
+// console.log(favorites.groupChildCode(arr));
 //axios()
 //console.log(favorites.convertPoints(''))
 //console.log(favorites.customErrorOccer())
+
+string();
